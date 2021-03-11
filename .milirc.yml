@@ -1,0 +1,5 @@
+mili:
+  version: 3.9.2
+template:
+  repository: 'npm:@mtpl/docker-container'
+  version: 1.2.0

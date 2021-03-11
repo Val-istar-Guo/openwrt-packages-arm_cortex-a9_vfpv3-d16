@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "mili": "^3.9.3",
+    "@commitlint/cli": "^9.1.1",
+    "@commitlint/config-conventional": "^9.1.1",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5",
+    "standard-version": "^8.0.2"
+  },
+  "name": "openwrt-packages-arm_cortex-a9_vfpv3-d16",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=12"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ca": "git add -A && git-cz -av",
+    "commit": "git-cz",
+    "release": "standard-version",
+    "release:first": "standard-version --first-release",
+    "build": "docker build -t valistarguo/openwrt-packages-arm_cortex-a9_vfpv3-d16:latest .",
+    "prepush": "npm run build",
+    "push": "docker push valistarguo/openwrt-packages-arm_cortex-a9_vfpv3-d16",
+    "postpush": "git push"
+  }
+}

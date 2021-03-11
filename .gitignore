@@ -1,0 +1,16 @@
+# Mac
+.DS_Store
+
+# Editor
+*.swp
+
+# NodeJS
+node_modules
+
+# Log
+yarn-error.log
+npm-debug.log*
+
+# Lock
+yarn.lock
+package-lock.json
